@@ -13,7 +13,7 @@ function draw() {
   background(0, 50); 
 
   // Adiciona um novo foguete a cada 500 milissegundos
-  if (millis() - time >= 500) {
+  if (millis() - time >= 200) {
     time = millis();
     fireworks.push(new Firework());
   }
