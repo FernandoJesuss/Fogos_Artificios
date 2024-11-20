@@ -15,14 +15,14 @@ class Firework extends Particle {
     super.update();
     this.life = 100;
 
-    if (!this.exploded && this.vel.y >= 0) { // Corrigido para >= para garantir a explosão ao atingir o topo
+    if (!this.exploded && this.vel.y >= 0) { 
       this.exploded = true;
       for (let i = 0; i < 100; i++) {
         let p = new Particle();
         p.pos = this.pos.copy();
         p.vel = p5.Vector.random2D();
         p.vel.setMag(random(0, 3));
-        p.color = this.color; // Certifique-se de que a cor está definida na classe Particle
+        p.color = this.color;
         this.sparks.push(p);
       }
     }
@@ -31,7 +31,7 @@ class Firework extends Particle {
       for (let i = this.sparks.length - 1; i >= 0; i--) {
         let p = this.sparks[i];
         if (p.isAlive()) {
-          p.applyForce(grav); // Verifique se 'grav' está definido
+          p.applyForce(grav);
           p.update();
         } else {
           this.sparks.splice(i, 1);
@@ -50,6 +50,8 @@ class Firework extends Particle {
     }
   }
 }
+
+
 
 
 

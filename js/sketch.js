@@ -4,13 +4,13 @@ let fireworks = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  grav = createVector(0, 0.1); // Força da gravidade
-  time = 0; // Inicializa o tempo
+  grav = createVector(0, 0.1); 
+  time = 0; 
 }
 
 function draw() {
   colorMode(RGB);
-  background(0, 50); // Fundo preto com transparência
+  background(0, 50); 
 
   // Adiciona um novo foguete a cada 500 milissegundos
   if (millis() - time >= 500) {
@@ -22,19 +22,18 @@ function draw() {
   for (let i = fireworks.length - 1; i >= 0; i--) {
     let f = fireworks[i];
     if (f.isAlive()) {
-      f.applyForce(grav); // Aplica a gravidade
-      f.update(); // Atualiza a posição e estado do foguete
-      f.render(); // Renderiza o foguete
+      f.applyForce(grav); 
+      f.update(); 
+      f.render();
     } else {
-      fireworks.splice(i, 1); // Remove foguete se não estiver mais vivo
+      fireworks.splice(i, 1); 
     }
   }
 }
 
 function mousePressed() {
-  console.log(fireworks); // Exibe a lista de fogos de artifício no console
+  console.log(fireworks); 
 }
-
 
 
 
