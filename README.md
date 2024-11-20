@@ -1,7 +1,8 @@
-<h1 align="center"> Animação de rotação de perfil</h1>
+<h1 align="center"> Animação de Fogos de Artifícios</h1>
 
 ## Descrição
-Este projeto apresenta uma animação de rotação de perfil, exibindo diversos personagens da aclamada série infantil Castelo Rá-Tim-Bum, animados em um círculo central. Ao clicar nos diferentes personagens, eles são destacados no centro da animação, permitindo que os usuários interajam de forma divertida e personalizada com esses ícones da cultura pop. O objetivo é criar uma interface envolvente e interativa, que proporcione aos usuários uma experiência nostálgica e imersiva com os amados personagens da série.
+Este projeto exibe uma animação de fogos de artifício coloridos explodindo contra um fundo escuro. Os fogos de artifício apresentam uma variedade de cores, incluindo verde, azul, roxo e laranja, criando um efeito visual dinâmico e deslumbrante.
+Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil integração em projetos.
 
 [**Acesse o Site**](https://fernandojesuss.github.io/Relogio_Personagens/)
 
@@ -10,17 +11,7 @@ Este projeto apresenta uma animação de rotação de perfil, exibindo diversos 
 
 ## Tecnologias Utilizadas
 
-##  HTML
-A estrutura básica da página web é construída usando HTML, que define os elementos e a organização do conteúdo.
-
-
-
-## CSS
-O design visual da animação, incluindo o layout circular, as cores e os estilos dos personagens, é implementado através do uso de CSS.
-
-## JavaScript
-A interatividade da animação, permitindo que os usuários cliquem nos personagens e os destaquem no centro, é alcançada por meio de JavaScript. Essa linguagem de programação é responsável por controlar a lógica e os efeitos da rotação e destaque dos personagens.
-
+- HTML | CSS | JavaScript
 
 
 
