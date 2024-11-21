@@ -13,11 +13,12 @@ Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil in
 
 - HTML | CSS | JavaScript
 
+## Biblioteca usada 
+Biblioteca: howler.min.js (howler.min.js efeitos sonoros)
+
 ## Funcionalidades
 Simulação de fogos de artifício com física realista.
 
-
-## F
 
 
 
