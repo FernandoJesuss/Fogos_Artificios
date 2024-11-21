@@ -2,7 +2,7 @@ class Firework extends Particle {
   constructor() {
     super();
     this.pos.set(random(100, width - 100), height);
-    this.vel.set(random(-2, 2), random(-10, -8));
+    this.vel.set(random(-7, 5), random(-13, -10));
     this.exploded = false;
     this.sparks = [];
   }
