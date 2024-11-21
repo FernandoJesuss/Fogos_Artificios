@@ -2,7 +2,7 @@ class Firework extends Particle {
   constructor() {
     super();
     this.pos.set(random(100, width - 100), height);
-    this.vel.set(random(-7, 5), random(-13, -10));
+    this.vel.set(random(-1, 1), random(-13, -10));
     this.exploded = false;
     this.sparks = [];
   }
@@ -50,3 +50,24 @@ class Firework extends Particle {
     }
   }
 }
+
+ // Criar um objeto Howl para o áudio
+ var som = new Howl({
+  src: ['./audio/fogos.mp3'], 
+  volume: 0.5,
+  loop: true 
+});
+
+var reproduzindo = false; 
+
+// Função para alternar entre reproduzir e parar o áudio
+document.getElementById('toggle').onclick = function() {
+  if (reproduzindo) {
+      som.pause(); 
+      this.textContent = 'Reproduzir'; 
+  } else {
+      som.play(); 
+      this.textContent = 'Parar'; 
+  }
+  reproduzindo = !reproduzindo; 
+};

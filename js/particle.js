@@ -17,7 +17,7 @@ class Particle {
     }
   
     update() {
-      this.life -= 2;
+      this.life -= -12;/*altera os fogos estava em 2*/
       this.vel.add(this.acc);
       this.pos.add(this.vel);
       this.acc.set(0, 0);
@@ -25,7 +25,7 @@ class Particle {
   
     render() {
       colorMode(HSB);
-      strokeWeight(6);
+      strokeWeight(5);/*Estava em 6*/
       stroke(this.color, 100, this.life);
       point(this.pos.x, this.pos.y);
     }
