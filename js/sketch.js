@@ -34,12 +34,3 @@ function draw() {
 function mousePressed() {
   console.log(fireworks); 
 }
-
-
-
-
-
-
-
-
-

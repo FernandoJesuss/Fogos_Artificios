@@ -50,17 +50,3 @@ class Firework extends Particle {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
