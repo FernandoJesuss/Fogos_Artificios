@@ -13,6 +13,14 @@ Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil in
 
 - HTML | CSS | JavaScript
 
+## Funcionalidades
+Simulação de fogos de artifício com física realista.
+
+
+## F
+
+
+
 
 
 
