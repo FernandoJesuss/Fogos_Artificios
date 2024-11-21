@@ -64,10 +64,10 @@ var reproduzindo = false;
 document.getElementById('toggle').onclick = function() {
   if (reproduzindo) {
       som.pause(); 
-      this.textContent = 'Reproduzir'; 
+      this.textContent = '🔇'; 
   } else {
       som.play(); 
-      this.textContent = 'Parar'; 
+      this.textContent = '🔊'; 
   }
   reproduzindo = !reproduzindo; 
 };
