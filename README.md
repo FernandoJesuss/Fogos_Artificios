@@ -18,15 +18,15 @@ Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil in
 <div style="display: flex; flex-direction: column; font-family: monospace; white-space: pre;">
   
 /projeto <br>
-│<br>
-├── index.html &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       # Arquivo HTML principal <br>
+│ <br>
+├── index.html &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Arquivo HTML principal <br>
 ├── css <br>
-│   └── styles.css &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   # Estilos CSS <br>
+│   └── styles.css &nbsp; &nbsp; &nbsp; &nbsp;    # Estilos CSS <br>
 ├── js <br>
-│   ├── particle.js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  # Classe Particle <br>
-│   ├── firework.js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  # Classe Firework <br>
-│   └── sketch.js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    # Lógica principal do sketch <br>
-└── README.md &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        # Documentação do projeto
+│   ├── particle.js &nbsp; &nbsp; &nbsp;          # Classe Particle <br>
+│   ├── firework.js &nbsp; &nbsp;                 # Classe Firework <br>
+│   └── sketch.js &nbsp; &nbsp; &nbsp;            # Lógica principal do sketch <br>
+└── README.md &nbsp;                              # Documentação do projeto
 
 </div>
 
