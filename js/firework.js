@@ -54,7 +54,7 @@ class Firework extends Particle {
  // Criar um objeto Howl para o áudio
  var som = new Howl({
   src: ['./audio/fogos.mp3'], 
-  volume: 0.5,
+  volume: 1,/*0.05*/
   loop: true 
 });
 
