@@ -11,13 +11,28 @@ Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil in
 
 ## Tecnologias Utilizadas
 
-- HTML | CSS | JavaScript
+- HTML | CSS | JavaScript | p5.js | Howler.js
+
+## Estrutura do Projeto
+
+/projeto
+│
+├── index.html          # Arquivo HTML principal
+├── css
+│   └── styles.css      # Estilos CSS
+├── js
+│   ├── particle.js     # Classe Particle
+│   ├── firework.js     # Classe Firework
+│   └── sketch.js       # Lógica principal do sketch
+└── README.md           # Documentação do projeto
 
 ## Biblioteca usada 
-Biblioteca: howler.min.js (howler.min.js efeitos sonoros)
+Biblioteca: p5.js para gráficos dinâmicos e Howler.js para áudio imersivo.
 
 ## Funcionalidades
-Simulação de fogos de artifício com física realista.
+- Simulação de fogos de artifício com partículas que se espalham.
+- Controle de áudio para ligar/desligar os sons dos fogos.
+- Estilo responsivo e visualmente atraente.
 
 
 
