@@ -19,14 +19,14 @@ Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil in
   
 /projeto <br>
 │<br>
-├── index.html          # Arquivo HTML principal <br>
+├── index.html &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       # Arquivo HTML principal <br>
 ├── css <br>
-│   └── styles.css      # Estilos CSS <br>
+│   └── styles.css &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   # Estilos CSS <br>
 ├── js <br>
-│   ├── particle.js     # Classe Particle <br>
-│   ├── firework.js     # Classe Firework <br>
-│   └── sketch.js       # Lógica principal do sketch <br>
-└── README.md           # Documentação do projeto
+│   ├── particle.js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  # Classe Particle <br>
+│   ├── firework.js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  # Classe Firework <br>
+│   └── sketch.js &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    # Lógica principal do sketch <br>
+└── README.md &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        # Documentação do projeto
 
 </div>
 
