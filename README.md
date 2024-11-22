@@ -15,16 +15,20 @@ Esta animação é desenvolvida utilizando tecnologias web, permitindo fácil in
 
 ## Estrutura do Projeto
 
-/projeto
-│
-├── index.html          # Arquivo HTML principal
-├── css
-│   └── styles.css      # Estilos CSS
-├── js
-│   ├── particle.js     # Classe Particle
-│   ├── firework.js     # Classe Firework
-│   └── sketch.js       # Lógica principal do sketch
+<div style="display: flex; flex-direction: column; font-family: monospace; white-space: pre;">
+  
+/projeto <br>
+│<br>
+├── index.html          # Arquivo HTML principal <br>
+├── css <br>
+│   └── styles.css      # Estilos CSS <br>
+├── js <br>
+│   ├── particle.js     # Classe Particle <br>
+│   ├── firework.js     # Classe Firework <br>
+│   └── sketch.js       # Lógica principal do sketch <br>
 └── README.md           # Documentação do projeto
+
+</div>
 
 ## Biblioteca usada 
 Biblioteca: p5.js para gráficos dinâmicos e Howler.js para áudio imersivo.
