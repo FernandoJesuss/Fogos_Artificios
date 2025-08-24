@@ -1,17 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <meta charset="utf-8" />
-    <title> Fogos de Artifícios </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>🎆 Show de Fogos Premium - Experiência Interativa 🎆</title>
+    
+</head>
 
-  </head>
-  <body>
-    <button id="toggle">🔇</button>
-    <script src="./js/particle.js"></script>
-    <script src="./js/firework.js"></script>
-    <script src="./js/sketch.js"></script>
-  </body>
+<body>
+    <!-- Stars Background -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Enhanced Header -->
+    <div class="header">
+        <span class="title">✨ FOGOS PREMIUM</span>
+        <button id="toggleSound" class="control-btn" title="Som On/Off">🔊</button>
+        <button id="autoMode" class="control-btn" title="Modo Automático">⚡</button>
+        <button id="resetBtn" class="control-btn" title="Reiniciar">🔄</button>
+        <button id="pauseBtn" class="control-btn" title="Pausar/Continuar">⏸️</button>
+        <button id="toggleInfo" class="control-btn" title="Informações">📊</button>
+        <button id="fullscreen" class="control-btn" title="Tela Cheia">🔳</button>
+    </div>
+
+    <!-- Particle Counter -->
+    <div class="particle-counter" id="particleCounter">
+        Partículas Ativas: <span id="activeCount">0</span>
+    </div>
+
+    <!-- Advanced Controls -->
+    <div class="bottom-controls">
+        <div class="slider-container">
+            <span class="slider-label">Velocidade</span>
+            <input type="range" id="speedSlider" class="slider" min="0.2" max="4" value="1" step="0.1">
+        </div>
+        <div class="slider-container">
+            <span class="slider-label">Frequência</span>
+            <input type="range" id="frequencySlider" class="slider" min="15" max="180" value="60" step="15">
+        </div>
+        <div class="slider-container">
+            <span class="slider-label">Intensidade</span>
+            <input type="range" id="intensitySlider" class="slider" min="0.3" max="3" value="1" step="0.1">
+        </div>
+        <div class="slider-container">
+            <span class="slider-label">Gravidade</span>
+            <input type="range" id="gravitySlider" class="slider" min="0.02" max="0.4" value="0.1" step="0.01">
+        </div>
+        <div class="slider-container">
+            <span class="slider-label">Vento</span>
+            <input type="range" id="windSlider" class="slider" min="-0.1" max="0.1" value="0" step="0.01">
+        </div>
+    </div>
+
+    <!-- Firework Types -->
+    <div class="firework-types">
+        <h3>🎆 Tipos</h3>
+        <button class="type-btn active" data-type="classic">Clássico</button>
+        <button class="type-btn" data-type="burst">Explosão</button>
+        <button class="type-btn" data-type="spiral">Espiral</button>
+        <button class="type-btn" data-type="heart">Coração</button>
+        <button class="type-btn" data-type="star">Estrela</button>
+        <button class="type-btn" data-type="ring">Anel</button>
+        <button class="type-btn" data-type="fountain">Cascata</button>
+    </div>
+
+    <!-- Enhanced Info Panel -->
+    <div class="info-panel hidden" id="infoPanel">
+        <div class="info-title">📊 ESTATÍSTICAS AVANÇADAS</div>
+        <div class="info-item">
+            <span>Fogos Ativos:</span>
+            <span id="activeFireworks">0</span>
+        </div>
+        <div class="info-item">
+            <span>Partículas:</span>
+            <span id="activeParticles">0</span>
+        </div>
+        <div class="info-item">
+            <span>Performance:</span>
+            <span id="currentFPS">60 FPS</span>
+        </div>
+        <div class="performance-bar">
+            <div class="performance-fill" id="performanceFill"></div>
+        </div>
+        <div class="info-item">
+            <span>Clicks Totais:</span>
+            <span id="clickCount">0</span>
+        </div>
+        <div class="info-item">
+            <span>Maior Explosão:</span>
+            <span id="maxExplosion">0</span>
+        </div>
+        <div class="info-item">
+            <span>Tempo Ativo:</span>
+            <span id="runtime">00:00</span>
+        </div>
+        <div class="info-item">
+            <span>Temperatura:</span>
+            <span id="temperature">🔥 Normal</span>
+        </div>
+    </div>
+
+    <!-- Enhanced Instructions -->
+    <div class="instructions hidden" id="instructions">
+        <h3>🎮 CONTROLES PREMIUM</h3>
+        <p><kbd>Click</kbd> - Criar fogo de artifício</p>
+        <p><kbd>Espaço</kbd> - Modo automático avançado</p>
+        <p><kbd>R</kbd> - Reset completo do sistema</p>
+        <p><kbd>P</kbd> - Pausar/Continuar animação</p>
+        <p><kbd>M</kbd> - Controle de áudio premium</p>
+        <p><kbd>F</kbd> - Modo tela cheia</p>
+        <p><kbd>1-7</kbd> - Selecionar tipos de fogos</p>
+        <p><kbd>↑↓</kbd> - Ajustar intensidade</p>
+        <p><kbd>←→</kbd> - Controlar vento</p>
+        <p><strong>Dica:</strong> Mantenha pressionado para múltiplos fogos!</p>
+    </div>
+
+    <script src="./javascript/script.js"></script>
+</body>
+
 </html>
